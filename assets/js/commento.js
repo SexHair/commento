@@ -446,9 +446,9 @@
     Commento.init = function(configuration) {
         _serverUrl = configuration.serverUrl || _serverUrl;
         _honeypot = configuration.honeypot || _honeypot;
-        _showdownUrl = configuration.showdownUrl || (_serverUrl + _showdownUrl);
-        _spectreUrl = configuration.spectreUrl || (_serverUrl + _spectreUrl);
-        _commentoCssUrl = configuration.commentoCssUrl || (_serverUrl + _commentoCssUrl);
+        _showdownUrl = configuration.showdownUrl || (_showdownUrl);
+        _spectreUrl = configuration.spectreUrl || (_spectreUrl);
+        _commentoCssUrl = configuration.commentoCssUrl || (_commentoCssUrl);
 
         _api.get = _serverUrl + '/get';
         _api.create = _serverUrl + '/create';
