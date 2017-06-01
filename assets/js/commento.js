@@ -451,10 +451,7 @@
         _commentoCssUrl = configuration.commentoCssUrl || (_serverUrl + _commentoCssUrl);
 
         _api.get = _serverUrl + '/get';
-        _api.create = _serverUrl + '/create';
-
-        loadCSS(_spectreUrl);
-        loadCSS(_commentoCssUrl);
+        _api.create = _serverUrl + '/create'
 
         loadJS(_showdownUrl, function() {
             _showdownConverter = new showdown.Converter();
