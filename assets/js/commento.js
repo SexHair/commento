@@ -453,7 +453,6 @@
         _api.get = _serverUrl + '/get';
         _api.create = _serverUrl + '/create'
 
-        loadJS(_showdownUrl, function() {
             _showdownConverter = new showdown.Converter();
 
             var commento = $(COMMENTO_ID);
@@ -502,7 +501,6 @@
             append(commento, div);
 
             _getComments();
-        });
     };
 
     /**
